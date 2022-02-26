@@ -13,6 +13,11 @@
 		D4D5EE0327C604F700942B82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4D5EE0127C604F700942B82 /* Main.storyboard */; };
 		D4D5EE0527C604F800942B82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4D5EE0427C604F800942B82 /* Assets.xcassets */; };
 		D4D5EE0827C604F800942B82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4D5EE0627C604F800942B82 /* LaunchScreen.storyboard */; };
+		D4D5EE1027C6071300942B82 /* KisiHucreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D5EE0F27C6071300942B82 /* KisiHucreTableViewCell.swift */; };
+		D4D5EE1227C60A1F00942B82 /* KisiEkleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D5EE1127C60A1F00942B82 /* KisiEkleViewController.swift */; };
+		D4D5EE1427C60A3800942B82 /* KisiGuncelleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D5EE1327C60A3800942B82 /* KisiGuncelleViewController.swift */; };
+		D4D5EE1627C60A4A00942B82 /* KisiDetayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D5EE1527C60A4A00942B82 /* KisiDetayViewController.swift */; };
+		D4D5EE3C27C669AB00942B82 /* PersonsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D4D5EE3A27C669AB00942B82 /* PersonsApp.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		D4D5EE0427C604F800942B82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4D5EE0727C604F800942B82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4D5EE0927C604F800942B82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4D5EE0F27C6071300942B82 /* KisiHucreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisiHucreTableViewCell.swift; sourceTree = "<group>"; };
+		D4D5EE1127C60A1F00942B82 /* KisiEkleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisiEkleViewController.swift; sourceTree = "<group>"; };
+		D4D5EE1327C60A3800942B82 /* KisiGuncelleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisiGuncelleViewController.swift; sourceTree = "<group>"; };
+		D4D5EE1527C60A4A00942B82 /* KisiDetayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisiDetayViewController.swift; sourceTree = "<group>"; };
+		D4D5EE3B27C669AB00942B82 /* PersonsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersonsApp.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D457390B27C6A1CA006973A1 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				D4D5EDFB27C604F700942B82 /* AppDelegate.swift */,
+				D4D5EDFD27C604F700942B82 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		D4A50D8527C8C5B300C7A227 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D4D5EE3A27C669AB00942B82 /* PersonsApp.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		D4A50D8627C8C72500C7A227 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D4D5EE0F27C6071300942B82 /* KisiHucreTableViewCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D4D5EDEF27C604F700942B82 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +91,27 @@
 		D4D5EDFA27C604F700942B82 /* PersonsApp */ = {
 			isa = PBXGroup;
 			children = (
-				D4D5EDFB27C604F700942B82 /* AppDelegate.swift */,
-				D4D5EDFD27C604F700942B82 /* SceneDelegate.swift */,
-				D4D5EDFF27C604F700942B82 /* ViewController.swift */,
+				D4A50D8627C8C72500C7A227 /* Model */,
+				D457390B27C6A1CA006973A1 /* Delegate */,
+				D4D5EE3D27C669C200942B82 /* View */,
+				D4A50D8527C8C5B300C7A227 /* CoreData */,
 				D4D5EE0127C604F700942B82 /* Main.storyboard */,
 				D4D5EE0427C604F800942B82 /* Assets.xcassets */,
 				D4D5EE0627C604F800942B82 /* LaunchScreen.storyboard */,
 				D4D5EE0927C604F800942B82 /* Info.plist */,
 			);
 			path = PersonsApp;
+			sourceTree = "<group>";
+		};
+		D4D5EE3D27C669C200942B82 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D4D5EDFF27C604F700942B82 /* ViewController.swift */,
+				D4D5EE1327C60A3800942B82 /* KisiGuncelleViewController.swift */,
+				D4D5EE1127C60A1F00942B82 /* KisiEkleViewController.swift */,
+				D4D5EE1527C60A4A00942B82 /* KisiDetayViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +186,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4D5EE0027C604F700942B82 /* ViewController.swift in Sources */,
+				D4D5EE1027C6071300942B82 /* KisiHucreTableViewCell.swift in Sources */,
+				D4D5EE3C27C669AB00942B82 /* PersonsApp.xcdatamodeld in Sources */,
 				D4D5EDFC27C604F700942B82 /* AppDelegate.swift in Sources */,
+				D4D5EE1627C60A4A00942B82 /* KisiDetayViewController.swift in Sources */,
 				D4D5EDFE27C604F700942B82 /* SceneDelegate.swift in Sources */,
+				D4D5EE1427C60A3800942B82 /* KisiGuncelleViewController.swift in Sources */,
+				D4D5EE1227C60A1F00942B82 /* KisiEkleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +410,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D4D5EE3A27C669AB00942B82 /* PersonsApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D4D5EE3B27C669AB00942B82 /* PersonsApp.xcdatamodel */,
+			);
+			currentVersion = D4D5EE3B27C669AB00942B82 /* PersonsApp.xcdatamodel */;
+			path = PersonsApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D4D5EDF027C604F700942B82 /* Project object */;
 }
